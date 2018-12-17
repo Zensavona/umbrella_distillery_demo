@@ -16,7 +16,8 @@ defmodule UmbrellaDistilleryDemo.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     [
-      {:distillery, "~> 1.5"}
+      {:edeliver, ">= 1.6.0"},
+      {:distillery, "~> 2.0", warn_missing: false},
     ]
   end
 end

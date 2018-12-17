@@ -71,4 +71,7 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs which should be versioned
 # separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
+
+config :blog, BlogWeb.Endpoint,
+  secret_key_base: "h5UBn71106RKJNFL0A5eeyixn+N18bQNJj25cGnRAyrtdddKT6nNx/I6GAPLVaC7"
