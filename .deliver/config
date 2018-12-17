@@ -1,0 +1,17 @@
+# .deliver/config
+
+APP="umbrella_distillery_demo"
+
+BUILD_HOST="192.168.33.10"
+BUILD_USER="root"
+BUILD_AT="/tmp/edeliver/$APP/builds"
+
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
+# RELEASE_DIR="/tmp/edeliver/$APP/builds/_build/prod/rel/$APP"
+
+# prevent re-installing node modules; this defaults to "."
+GIT_CLEAN_PATHS="_build rel priv/static"
+
+PRODUCTION_HOSTS="192.168.33.10"
+PRODUCTION_USER="root"
+DELIVER_TO="/home/deploy"
