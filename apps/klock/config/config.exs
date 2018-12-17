@@ -1,4 +1,4 @@
 use Mix.Config
 
 config :klock,
-  interval: 1000
+  interval: 2000

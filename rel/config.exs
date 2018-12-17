@@ -45,7 +45,7 @@ end
 # will be used by default
 
 release :umbrella_distillery_demo do
-  set version: "0.4.2"
+  set version: "0.4.3"
   set applications: [
     :runtime_tools,
     blog: :permanent,
