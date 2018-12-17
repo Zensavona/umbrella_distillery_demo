@@ -19,5 +19,12 @@ So, this is an umbrella application which has a regular `GenServer` based Elixir
 - bump version in `rel/config.exs`
 - `git add . && git commit -am "message"`
 - `git tag -a <version> -m "message"`
+
+#### First time to start up
+- `mix edeliver build release production`
+- `mix edeliver deploy release to production`
+- `mix edeliver start production`
+
+#### To make hot changes
 - `mix edeliver build upgrade production --from=<old version> --to=<new version>`
 - `mix edeliver deploy upgrade to production`
