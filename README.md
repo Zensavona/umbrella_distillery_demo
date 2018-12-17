@@ -1,16 +1,5 @@
 # Umbrella Distillery Demo
 
-### To deploy with edeliver and hot updates (without auto-versioning (yet))
-
-- set correct IPs and user in `.deliver/config`
-- make a change
-- bump version in `mix.exs` of the child app/s you change
-- bump version in `rel/config.exs`
-- `git add . && git commit -am "message"`
-- `git tag -a <version> -m "message"`
-- `mix edeliver build upgrade production --from=<old version> --to=<new version>`
-- `mix edeliver deploy upgrade to production`
-
 So, this is an umbrella application which has a regular `GenServer` based Elixir application running alongside a Phoenix application - they can both be hot updated:
 
 - `mix deps.get`
@@ -21,3 +10,14 @@ So, this is an umbrella application which has a regular `GenServer` based Elixir
 - `MIX_ENV=prod mix release --upgrade`
 - `_build/prod/rel/umbrella_distillery_demo/bin/umbrella_distillery_demo upgrade 0.2.0`
 - see changes happen live
+
+### To deploy with edeliver and hot updates (without auto-versioning (yet))
+
+- set correct IPs and user in `.deliver/config`
+- make a change
+- bump version in `mix.exs` of the child app/s you change
+- bump version in `rel/config.exs`
+- `git add . && git commit -am "message"`
+- `git tag -a <version> -m "message"`
+- `mix edeliver build upgrade production --from=<old version> --to=<new version>`
+- `mix edeliver deploy upgrade to production`
