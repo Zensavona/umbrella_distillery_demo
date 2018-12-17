@@ -8,7 +8,7 @@
 - bump version in `rel/config.exs`
 - `git add . && git commit -am "message"`
 - `git tag -a <version> -m "message"`
-- `mix edeliver upgrade production --from=<old version> --to=<new version>`
+- `mix edeliver build upgrade production --from=<old version> --to=<new version>`
 - `mix edeliver deploy upgrade to production`
 
 So, this is an umbrella application which has a regular `GenServer` based Elixir application running alongside a Phoenix application - they can both be hot updated:
