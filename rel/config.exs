@@ -49,6 +49,6 @@ release :umbrella_distillery_demo do
   set applications: [
     :runtime_tools,
     blog: :permanent,
-    clock: :permanent
+    klock: :permanent
   ]
 end
